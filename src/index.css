@@ -10,3 +10,19 @@ body {
   margin: 0;
   min-height: 100%;
 }
+
+img {
+  width: 50%;
+}
+
+a {
+  color: #3273dc;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.image-source {
+  color: #3273dc;
+  text-decoration: none;
+  font-size: 1rem;
+}
