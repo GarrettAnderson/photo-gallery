@@ -12,11 +12,24 @@ class PhotoDetail extends Component {
     console.log(currentCategory)
     return (
       <main>
-        <Header />
+        <header>
+          <h1>Things I Like</h1>
+          <h2>A Photo Gallery by Garrett Anderson</h2>
+        </header>
         <section>
           🏡Home / {currentCategory.title} / {currentCategory.photos[this.props.match.params.id].title}
         </section>
-        <ImageDetail />
+        <section>
+          <header>{currentCategory.photos[this.props.match.params.id].title}</header>
+          <img src={currentCategory.photos[this.props.match.params.id].imageURL} />
+          <a
+            href={currentCategory.photos[this.props.match.params.id].sourceURL}
+            className="image-source"
+            target="_blank"
+          >
+            Source
+          </a>
+        </section>
       </main>
     )
   }
